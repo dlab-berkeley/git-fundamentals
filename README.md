@@ -49,3 +49,7 @@ A. What is Git Annex (Assistant)?
 ## Git Annex
 
 http://git-annex.branchable.com/
+
+## Fork/clone
+
+Forking on github is same as cloning in the command line.
