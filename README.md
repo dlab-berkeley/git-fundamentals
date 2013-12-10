@@ -7,6 +7,7 @@ Annex (Assistant)
 ## Concepts
 
 1. What is Git?
+	- A version control system, collaboration tool, and general awesomesauce.
     - If you forget today, click "Help" at the top of any GitHub page
 2. What is GitHub?
     - It's a web app
