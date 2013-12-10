@@ -21,8 +21,9 @@ A. What is Git Annex (Assistant)?
     - A companion to git for big files
     - We'll cover this in depth if there's time.
 
-## Getting the tools
+## Getting the tools / Setup
 
+ - Sign up for [github](https://github.com)
  - Command line tools (you'll need this!):
     - GitHub recommends the official Git installer
     - [homebrew](http://brew.sh) for OS X
