@@ -46,6 +46,7 @@ A. What is Git Annex (Assistant)?
  - GitHub sponsors [this](http://try.github.io/).
  - Where does "help" go from GitHub? [Here](http://help.github.io).
  - @davclark is an awesome resource, himself!
+   (when he's not being a jerk)
 
 ## Git Annex
 
