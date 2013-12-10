@@ -40,7 +40,7 @@ A. What is Git Annex (Assistant)?
     - [Emacs](http://www.emacswiki.org/emacs/Git)
     - [Sublime Text 2](https://github.com/kemayo/sublime-text-git)
     - gedit (use RabbitVCS)
-    - ...
+    - [TextWrangler](https://github.com/boxen/puppet-textwrangler)
 
 ## Awesome resources
 
