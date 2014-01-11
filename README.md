@@ -44,12 +44,13 @@ A. What is Git Annex (Assistant)?
 
 ## Awesome resources
 
- - [Basic commends cheat sheet](https://confluence.atlassian.com/display/STASH/Basic+Git+commands)
+ - [Basic commands cheat sheet](https://confluence.atlassian.com/display/STASH/Basic+Git+commands)
  - [Gamified git](http://pcottle.github.io/learnGitBranching/)
  - GitHub sponsors [this](http://try.github.io/).
  - Where does "help" go from GitHub? [Here](http://help.github.io).
  - @davclark is an awesome resource, himself!
    (when he's not being a jerk)
+ - [Linux commands cheat sheet](http://www.pixelbeat.org/cmdline.html)  
 
 ## Git Annex
 
