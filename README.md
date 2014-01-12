@@ -7,7 +7,7 @@ Annex (Assistant)
 ## Concepts
 
 1. What is Git?
-	- A version control system, collaboration tool, and general awesomesauce.
+    - A version control system, collaboration tool, and general awesomesauce.
     - If you forget today, click "Help" at the top of any GitHub page
 2. What is GitHub?
     - It's a web app
@@ -34,7 +34,7 @@ A. What is Git Annex (Assistant)?
     - Lightweight Mac client: [GitX-dev](http://rowanj.github.io/gitx/)
     - Integrated with file manager:
         - [TortoiseGit](https://code.google.com/p/tortoisegit/) on Windows
-        - [RabbitVCS](http://rabbitvcs.org/) on Linux (also works with gedit)
+        - [RabbitVCS](http://rabbitvcs.org/) on Linux (also integrates with gedit)
  - Integration for your text editor!
     - Vim [fugitive](https://github.com/tpope/vim-fugitive)
     - [Emacs](http://www.emacswiki.org/emacs/Git)
@@ -48,9 +48,9 @@ A. What is Git Annex (Assistant)?
  - [Gamified git](http://pcottle.github.io/learnGitBranching/)
  - GitHub sponsors [this](http://try.github.io/).
  - Where does "help" go from GitHub? [Here](http://help.github.io).
- - @davclark is an awesome resource, himself!
-   (when he's not being a jerk)
- - [Linux commands cheat sheet](http://www.pixelbeat.org/cmdline.html)  
+ - @davclark is an awesome resource, himself! (when he's not being a jerk)
+ - [Linux commands cheat sheet](http://www.pixelbeat.org/cmdline.html) (also
+   mostly works for OS X command line).
 
 ## Git Annex
 
