@@ -25,7 +25,7 @@ A. What is Git Annex (Assistant)?
 
  - Sign up for [github](https://github.com)
  - Command line tools (you'll need this!):
-    - GitHub recommends the official Git installer
+    - GitHub recommends the [official Git installer](http://git-scm.com/downloads)
     - [homebrew](http://brew.sh) for OS X
     - [gitbash](http://msysgit.github.io/) for Windows
     - Your package manager for Unix, etc.
