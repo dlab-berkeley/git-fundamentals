@@ -50,6 +50,8 @@ A. What is Git Annex (Assistant)?
  - @davclark is an awesome resource, himself! (when he's not being a jerk)
  - [Linux commands cheat sheet](http://www.pixelbeat.org/cmdline.html) (also
    mostly works for OS X command line).
+ - [git- the simple guide](http://rogerdudler.github.io/git-guide/)
+ - [The visual github guide](http://marklodato.github.io/visual-git-guide/index-en.html)
 
 ## Git Annex
 
