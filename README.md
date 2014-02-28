@@ -53,6 +53,30 @@ A. What is Git Annex (Assistant)?
  - [git- the simple guide](http://rogerdudler.github.io/git-guide/)
  - [The visual github guide](http://marklodato.github.io/visual-git-guide/index-en.html)
 
+### Local Git expositors at UC Berkeley
+
+ - [An IPython](https://github.com/fperez/reprosw/blob/master/Version%20Control.ipynb)
+   notebook (of course!) from @fperez.
+ - [Lots of exposition](http://matthew-brett.github.io/pydagogue) on git + other
+   mostly python stuff and [python scripts for a standardized git
+   workflow](https://github.com/matthew-brett/gitwash) from @matthew-brett.
+ - [Tons of R code to access public
+   APIs](http://ropensci.org/packages/index.html) from @karthik and the
+   @rOpenSci team.
+
+## Fancy GitHub features
+
+Map diffs are amazing:
+
+ - [Explore the history of markers for restaurants](https://github.com/DU-GIS/Geojson_Data/blob/master/Restaurants.geojson)
+ - [See how congressional redistricting looks](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5#diff-85d2c1b78193e963475250414e57940b)
+
+CSV diffs are strangely not as good, but (properly formatted) CSV is displayed
+nicely and is searchable:
+
+ - [A tables of S&P 500 securities](https://github.com/datasets/s-and-p-500-companies/blob/master/data/constituents-financials.csv)
+
+
 ## Git Annex
 
 http://git-annex.branchable.com/
