@@ -1,3 +1,7 @@
+---
+layout: default
+title: Git Fundamentals
+---
 git-fundamentals
 ================
 
