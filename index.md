@@ -89,3 +89,7 @@ http://git-annex.branchable.com/
 ## Forking! What's that?
 
 Forking on github is same as cloning in the command line.
+
+## Keeping Data Clean
+
+Please check out the [Open Knowledge Foundation's Data Standards](http://data.okfn.org/standards)!
