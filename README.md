@@ -17,7 +17,7 @@ Annex (Assistant)
     - "Small" "text" files.
     - Synchronization
     - Collaboration
-A. What is Git Annex (Assistant)?
+4. *Extra credit:* What is Git Annex?
     - A companion to git for big files
     - We'll cover this in depth if there's time.
 
@@ -26,15 +26,17 @@ A. What is Git Annex (Assistant)?
  - Sign up for [github](https://github.com)
  - Command line tools (you'll need this!):
     - GitHub recommends the [official Git installer](http://git-scm.com/downloads)
-    - [homebrew](http://brew.sh) for OS X
-    - [gitbash](http://msysgit.github.io/) for Windows
+    - [homebrew](http://brew.sh) for hackers on OS X
     - Your package manager for Unix, etc.
  - GUI tools
     - Windows & Mac, also supports hg: [SourceTree](http://www.sourcetreeapp.com/)
     - Lightweight Mac client: [GitX-dev](http://rowanj.github.io/gitx/)
+    - Lightweight GTK client: [gitg](https://wiki.gnome.org/Apps/Gitg)
     - Integrated with file manager:
         - [TortoiseGit](https://code.google.com/p/tortoisegit/) on Windows
         - [RabbitVCS](http://rabbitvcs.org/) on Linux (also integrates with gedit)
+    - Many [others](http://git-scm.com/downloads/guis) are available, and you
+      can search for even more!
  - Integration for your text editor!
     - Vim [fugitive](https://github.com/tpope/vim-fugitive)
     - [Emacs](http://www.emacswiki.org/emacs/Git)
@@ -43,14 +45,15 @@ A. What is Git Annex (Assistant)?
 
 ## Awesome resources
 
- - [Basic commands cheat sheet](https://confluence.atlassian.com/display/STASH/Basic+Git+commands)
+ - [Basic commands cheat sheet(s)](http://git-scm.com/docs) (Note the links to
+   other cheat sheets!)
  - [Gamified git](http://pcottle.github.io/learnGitBranching/)
  - GitHub sponsors [this](http://try.github.io/).
  - Where does "help" go from GitHub? [Here](http://help.github.io).
  - @davclark is an awesome resource, himself! (when he's not being a jerk)
  - [Linux commands cheat sheet](http://www.pixelbeat.org/cmdline.html) (also
    mostly works for OS X command line).
- - [git- the simple guide](http://rogerdudler.github.io/git-guide/)
+ - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
  - [The visual github guide](http://marklodato.github.io/visual-git-guide/index-en.html)
 
 ### Local Git expositors at UC Berkeley
@@ -81,8 +84,6 @@ nicely and is searchable:
 
 http://git-annex.branchable.com/
 
-## Fork/clone
+## Forking! What's that?
 
 Forking on github is same as cloning in the command line.
-
-Cyrus Dioun: Lisa Needs Braces
