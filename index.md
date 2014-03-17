@@ -90,6 +90,6 @@ http://git-annex.branchable.com/
 
 Forking on github is same as cloning in the command line.
 
-## Data Standards
+## Data Standards: Keeping Data Clean
 
-Don't forget about OKFn!
+Please check out the [Open Knowledge Foundation's Data Standards](http://data.okfn.org/standards)!
