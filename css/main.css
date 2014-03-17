@@ -5,10 +5,12 @@
 /*****************************************************************************/
 
 /* Global Reset */
+/* We aren't necessarily a web designer
 * {
   margin: 0;
   padding: 0;
 }
+*/
 
 html, body { height: 100%; }
 
