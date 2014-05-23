@@ -59,8 +59,8 @@ Annex (Assistant)
 
 ### Local Git expositors at UC Berkeley
 
- - [An IPython](https://github.com/fperez/reprosw/blob/master/Version%20Control.ipynb)
-   notebook (of course!) from @fperez.
+ - [An IPython notebook](https://github.com/fperez/reprosw/blob/master/Version%20Control.ipynb)
+   (of course!) from @fperez.
  - [Lots of exposition](http://matthew-brett.github.io/pydagogue) on git + other
    mostly python stuff and [python scripts for a standardized git
    workflow](https://github.com/matthew-brett/gitwash) from @matthew-brett.
