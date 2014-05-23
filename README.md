@@ -23,15 +23,16 @@ Annex (Assistant)
 
 ## Getting the tools / Setup
 
- - Sign up for [github](https://github.com)
+ - Sign up for [github](https://github.com), and **verify your email**.
  - Command line tools (you'll need this!):
     - GitHub recommends the [official Git installer](http://git-scm.com/downloads)
-    - [homebrew](http://brew.sh) for hackers on OS X
-    - Your package manager for Unix, etc.
+    - **I** recommend [homebrew](http://brew.sh) for hackers on OS X
+    - And it's easier to use your package manager (apt, yum, ...) for Unix, etc.
  - GUI tools
     - Windows & Mac, also supports hg: [SourceTree](http://www.sourcetreeapp.com/)
     - Lightweight Mac client: [GitX-dev](http://rowanj.github.io/gitx/)
-    - Lightweight GTK client: [gitg](https://wiki.gnome.org/Apps/Gitg)
+    - Lightweight GTK client: [gitg](https://wiki.gnome.org/Apps/Gitg) (get it
+      with your package manager).
     - Integrated with file manager:
         - [TortoiseGit](https://code.google.com/p/tortoisegit/) on Windows
         - [RabbitVCS](http://rabbitvcs.org/) on Linux (also integrates with gedit)
