@@ -62,7 +62,10 @@ Comics](http://www.phdcomics.com/comics/archive.php?comicid=1531).
 
 ### Local Git expositors at UC Berkeley
 
- - [An IPython notebook](https://github.com/fperez/reprosw/blob/master/Version%20Control.ipynb)
+ - A problem-focused exploration of git features is available in @jkitzes' [Data
+   Science Lessons](http://jkitzes.github.io/datasci-lessons/)
+ - [An IPython
+   notebook](https://github.com/fperez/reprosw/blob/master/Version%20Control.ipynb)
    (of course!) from @fperez.
  - [Lots of exposition](http://matthew-brett.github.io/pydagogue) on git + other
    mostly python stuff and [python scripts for a standardized git
