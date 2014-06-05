@@ -1,4 +1,4 @@
-git-fundamentals
+git-fundamentals (PC version!)
 ================
 
 A starting point for discovering the wonderful world of Git, GitHub, and Git
