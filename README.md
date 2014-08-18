@@ -1,4 +1,4 @@
-git-fundamentals (NTHNTHNTHNTH)
+git-fundamentals
 ================
 
 A starting point for discovering the wonderful world of Git, GitHub, and Git
