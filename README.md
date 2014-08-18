@@ -53,7 +53,7 @@ Comics](http://www.phdcomics.com/comics/archive.php?comicid=1531).
    other cheat sheets!)
  - [Gamified git](http://pcottle.github.io/learnGitBranching/)
  - GitHub sponsors [this](http://try.github.io/).
- - Where does "help" go from GitHub? [Here](http://help.github.io).
+ - Where does "help" go from GitHub? [Here](https://help.github.com/).
  - @davclark is an awesome resource, himself! (when he's not being a jerk)
  - [Linux commands cheat sheet](http://www.pixelbeat.org/cmdline.html) (also
    mostly works for OS X command line).
