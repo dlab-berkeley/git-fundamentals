@@ -1,5 +1,7 @@
-git-fundamentals
+git-fundamentals (Dav’s version)
 ================
+
+This is not the right edit to make!
 
 A starting point for discovering the wonderful world of Git, GitHub, and Git
 Annex (Assistant)
