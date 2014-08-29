@@ -1,6 +1,8 @@
 git-fundamentals
 ================
 
+Okay, I am adding an edit now.
+
 A starting point for discovering the wonderful world of Git, GitHub, and Git
 Annex (Assistant)
 
