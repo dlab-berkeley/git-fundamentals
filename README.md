@@ -89,7 +89,7 @@ nicely and is searchable:
 
 ## Git Annex
 
-http://git-annex.branchable.com/
+Read more here: http://git-annex.branchable.com/
 
 ## Forking! What's that?
 
