@@ -94,3 +94,9 @@ Read more here: http://git-annex.branchable.com/
 ## Forking! What's that?
 
 Forking on github is same as cloning in the command line.
+
+## How do I title a thing on branching?
+
+I have no idea. about the title.
+
+But for branching, you should check the above link for now.
