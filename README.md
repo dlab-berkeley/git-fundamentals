@@ -95,8 +95,6 @@ Read more here: http://git-annex.branchable.com/
 
 Forking on github is same as cloning in the command line.
 
-## How do I title a thing on branching?
+## Branching is also very important for collaboration
 
-I have no idea. about the title.
-
-But for branching, you should check the above link for now.
+For branching, you should check the above link for now.
