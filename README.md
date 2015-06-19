@@ -58,7 +58,7 @@ Comics](http://www.phdcomics.com/comics/archive.php?comicid=1531).
  - [Linux commands cheat sheet](http://www.pixelbeat.org/cmdline.html) (also
    mostly works for OS X command line).
  - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
- - [The visual github guide](http://marklodato.github.io/visual-git-guide/index-en.html)
+ - [The visual Git guide](http://marklodato.github.io/visual-git-guide/index-en.html)
 
 ### Local Git expositors at UC Berkeley
 
