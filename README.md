@@ -76,10 +76,10 @@ Comics](http://www.phdcomics.com/comics/archive.php?comicid=1531).
 
 ## Fancy GitHub features
 
-Map diffs are amazing:
+Map diffs are amazing (you may have to click the "rich diff" button as opposed to the raw "<>" button):
 
  - [Explore the history of markers for restaurants](https://github.com/DU-GIS/Geojson_Data/blob/master/Restaurants.geojson)
- - [See how congressional redistricting looks](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5#diff-85d2c1b78193e963475250414e57940b)
+ - [See how congressional redistricting looks](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5?short_path=85d2c1b#diff-85d2c1b78193e963475250414e57940b)
 
 CSV diffs are strangely not as good, but (properly formatted) CSV is displayed
 nicely and is searchable:
