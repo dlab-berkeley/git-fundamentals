@@ -4,26 +4,6 @@ git-fundamentals
 A starting point for discovering the wonderful world of Git, GitHub, and Git
 Annex (Assistant)
 
-## Concepts
-
-Let's avoid this [humorous, yet sad situation from PhD
-Comics](http://www.phdcomics.com/comics/archive.php?comicid=1531).
-
-1. What is Git?
-    - A version control system, collaboration tool, and general awesomesauce.
-    - If you forget today, click "Help" at the top of any GitHub page
-2. What is GitHub?
-    - It's a web app
-    - There's also a desktop app
-    - And even a mobile app!
-3. What is Git good at?
-    - "Small" "text" files.
-    - Synchronization
-    - Collaboration
-4. *Extra credit:* What is Git Annex?
-    - A companion to git for big files
-    - We'll cover this in depth if there's time.
-
 ## Getting the tools / Setup
 
  - Sign up for [github](https://github.com), and **verify your email**.
