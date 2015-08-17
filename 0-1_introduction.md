@@ -4,7 +4,7 @@ subtitle: Introduction
 minutes:
 ---
 
-Let's avoid this ![humorous, yet sad situation from PhD
+Let's avoid this [humorous, yet sad situation from PhD
 Comics](http://www.phdcomics.com/comics/archive.php?comicid=1531).
 
 How might you solve this problem?
