@@ -1,6 +1,6 @@
 ---
 title: Git FUN!damentals
-subtitle: Git-based workflow
+subtitle: Github-based workflow
 minutes:
 ---
 
@@ -11,9 +11,10 @@ minutes:
 While git is useful to use locally, it is invaluable when there are lots of people contributing to the same project. Github works by being a remote server that stands outside of your local file directory. The basic GitHub workflow looks like:
 
 1. Pull
-2. Modify
-3. Commit
-4. Push
+2. Branch
+3. Modify
+4. Commit
+5. Push
 
 ## Your first GitHub account
 
