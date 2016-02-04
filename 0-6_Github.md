@@ -26,6 +26,18 @@ While git is useful to use locally, it is invaluable when there are lots of peop
 
 ![But not this one](http://imgs.xkcd.com/comics/password_strength.png)
 
+## Enhancing your GitHub account
+
+GitHub offers account upgrades for current students, that you can apply for at [https://education.github.com/](https://education.github.com/)
+
+The education upgrade comes with:
+* Free upgrade to a Micro account on GitHub (for writing code)
+* Free Travis CI account (for testing code)
+* Free SendGrid account (automated email API)
+* 15USD in Amazon Web Services credits (for deploying code)
+* 50USD in Digital Ocean credits (for deploying code)
+* No transaction fees for your first 1000USD in sales via Stripe
+
 ## Creating repos on GitHub
 
 * Go to your homepage
