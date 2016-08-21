@@ -15,23 +15,23 @@ git log
 This should give you an output that looks something like this:
 
 ~~~{.output}
-commit a8874aa9d0266a2b0df354b308cfe8bd69ab1114
-Author: Dillon Niederhut <dillon.niederhut@gmail.com>
-Date:   Fri Aug 14 16:31:27 2015 -0700
+commit 0a6b46759cfe19b0e9dc450c4c498e7bfe1dd2b7
+Author: Chris Hench <chris.l.hench@gmail.com>
+Date:   Sun Aug 21 09:42:31 2016 -0700
 
-    testing gitignore
+    adding new files
 
-commit dffe554d91c1a9b8924e0fbb4046b7d99beb8edf
-Author: Dillon Niederhut <dillon.niederhut@gmail.com>
-Date:   Fri Aug 14 16:08:03 2015 -0700
+commit 0514d532e21189099e93d203c3d34b974951ecab
+Author: Chris Hench <chris.l.hench@gmail.com>
+Date:   Sun Aug 21 09:41:31 2016 -0700
 
-    something else
+    fruit_list updated
 
-commit 07f5ba50c64f25e047bbf3105c1d05b72dcadba2
-Author: Dillon Niederhut <dillon.niederhut@gmail.com>
-Date:   Fri Aug 14 15:24:36 2015 -0700
+commit a5e55672ccd14860fb9a3602ca2a1cf515bcd878
+Author: Chris Hench <chris.l.hench@gmail.com>
+Date:   Sun Aug 21 09:41:01 2016 -0700
 
-    README added
+    fruit_list added
 
 ~~~
 
@@ -56,32 +56,68 @@ git log -p
 ~~~
 
 ~~~{.output}
-commit dffe554d91c1a9b8924e0fbb4046b7d99beb8edf
-Author: Dillon Niederhut <dillon.niederhut@gmail.com>
-Date:   Fri Aug 14 16:08:03 2015 -0700
+commit 0a6b46759cfe19b0e9dc450c4c498e7bfe1dd2b7
+Author: Chris Hench <chris.l.hench@gmail.com>
+Date:   Sun Aug 21 09:42:31 2016 -0700
 
-    something else
+    adding new files
 
-diff --git a/README b/README
-index e69de29..299d09f 100644
---- a/README
-+++ b/README
-@@ -1 +1 @@
--Temporary git repository
-+Something else
-
-commit 07f5ba50c64f25e047bbf3105c1d05b72dcadba2
-Author: Dillon Niederhut <dillon.niederhut@gmail.com>
-Date:   Fri Aug 14 15:24:36 2015 -0700
-
-    README added
-
-diff --git a/README b/README
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..b75f824
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,2 @@
++# Files to ignore
++*.log
+diff --git a/CITATION b/CITATION
 new file mode 100644
 index 0000000..e69de29
+diff --git a/LICENSE b/LICENSE
+new file mode 100644
+index 0000000..e69de29
+diff --git a/grapher.R b/grapher.R
+new file mode 100644
+index 0000000..e69de29
+diff --git a/sorter.py b/sorter.py
+new file mode 100644
+index 0000000..e69de29
+
+commit 0514d532e21189099e93d203c3d34b974951ecab
+Author: Chris Hench <chris.l.hench@gmail.com>
+Date:   Sun Aug 21 09:41:31 2016 -0700
+
+    fruit_list updated
+
+diff --git a/fruit_list.txt b/fruit_list.txt
+index b3231cb..2c3ec01 100644
+--- a/fruit_list.txt
++++ b/fruit_list.txt
+@@ -1,3 +1,3 @@
+ banana
+-apple
++kiwi
+ peach
+
+commit a5e55672ccd14860fb9a3602ca2a1cf515bcd878
+Author: Chris Hench <chris.l.hench@gmail.com>
+Date:   Sun Aug 21 09:41:01 2016 -0700
+
+    fruit_list added
+
+diff --git a/fruit_list.txt b/fruit_list.txt
+new file mode 100644
+index 0000000..b3231cb
+--- /dev/null
++++ b/fruit_list.txt
+@@ -0,0 +1,3 @@
++banana
++apple
++peach
+(END)
 ~~~
 
-So we can see that the file was fine before commit `dffe554`, and that it was ruined by some schmuck named `Dillon Niederhut`
+So we can see that the file was fine before commit `0514d5`, and that it was ruined by some schmuck named `Chris Hench`
 
 ## Recovering old files
 
@@ -90,18 +126,42 @@ To get a file back to its old state, call checkout with the commit hash and the 
 >When you do this on your own computers, keep in mind the hash will be different
 
 ~~~{.input}
-git checkout 07f5ba5 README
+git checkout a5e556 fruit_list.txt
 ~~~
 
-and now if you look at the README file, you'll see it (and it alone!) has gone back to the way it was before the bug
+and now if you look at the fruit_list.txt file, you'll see it (and it alone!) has gone back to the way it was before the bug:
 
 ~~~{.output}
-Temporary git repository
+$ cat fruit_list.txt
 ~~~
 
-*and* we haven't lost any of the other files
+~~~
+banana
+apple
+peach
+~~~
+
+*and* we haven't lost any of the other files:
 
 ~~~{.output}
-CITATION	README		script.R
-LICENSE		magic.py	test.log
+$ ls -a
 ~~~
+
+~~~{.output}
+CITATION	fruit_list.txt 	passwords.log
+LICENSE		grapher.R 		sorter.py
+~~~
+
+If we decided we actually do like kiwis, to return to the master branch, we can type:
+
+~~~
+$ git checkout master fruit_list.txt
+~~~
+
+And now:
+
+~~~
+$ cat fruit_list.txt
+~~~
+
+will give us our kiwi back.

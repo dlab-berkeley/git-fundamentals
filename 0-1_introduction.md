@@ -29,6 +29,15 @@ You can go back to a previous iteration at any time, and can see exactly what ha
 
 ## For this workshop, we'll be using `git`
 
+Automated version control systems are nothing new. Tools like RCS, CVS, or
+Subversion have been around since the early 1980s and are used by many large
+companies. However, many of these are now becoming considered as legacy systems
+due to various limitations in their capabilities. In particular, the more
+modern systems, such as Git and Mercurial are distributed, meaning that they do
+not need a centralized server to host the repository. These modern systems also
+include powerful merging tools that make it possible for multiple authors to
+work within the same files concurrently.
+
 Git is a *distributed* version control system
 
 > `--distributed-is-the-new-local`
@@ -43,7 +52,7 @@ This makes it an enormously powerful tool for collaborative work
 
 ## For this workshop, we'll also be using GitHub
 
-GitHub is a website for keeping tabs on all the modified versions of your file everywhere it appears
+[GitHub](https://github.com) is a website for keeping tabs on all the modified versions of your file everywhere it appears. While other social coding collaboratory sites exist ([BitBucket](https://bitbucket.org/), [GitLab](https://gitlab.com), etc.), GitHub is currently the most popular, and has the added advantage for students of [free private repositories](https://education.github.com).
 
 GitHub makes it very easy to download, modify, and share code
 

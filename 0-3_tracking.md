@@ -8,17 +8,17 @@ Okay, we have git ready to go, now let's try using it!
 
 ## Making a repository
 
-Let's start by making a new directory called 'temp' and navigating to it
+Let's start by making a new directory called 'fruits' and navigating to it
 
 ~~~{.input}
-mkdir temp
-cd temp
+$ mkdir fruits
+$ cd 
 ~~~
 
 Now, we're going to tell git to start tracking what we're up to
 
 ~~~{.input}
-git init
+$ git init
 ~~~
 
 If you look in your directory now, you'll see that there is something called `.git`
@@ -31,9 +31,20 @@ If you look in your directory now, you'll see that there is something called `.g
 
 Cool! but this still isn't going anything for us because this directory is empty. So let's create a file in our new directory
 
-~~~{.input}
-echo "Temporary git repository" > README
 ~~~
+$ touch fruit_list.txt
+$ nano fruit_list.txt
+~~~
+
+Let's add some fruits:
+
+~~~
+banana
+apple
+peach
+~~~
+
+Remember `CTRL + O` to write, and `CTRL + X` to exit.
 
 Now let's see what git is up to with `git status`
 
@@ -45,15 +56,15 @@ Initial commit
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	README
+	fruit_list.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
 ~~~
 
 Here, git is telling you that there are local files that you haven't told git to look at
 
-~~~{.input}
-git add README
+~~~
+$ git add fruit_list.txt
 ~~~
 
 Now, when we run `status`, git tells us that we've told it to keep track of a new file
@@ -66,7 +77,7 @@ Initial commit
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-	new file:   README
+	new file:   fruit_list.txt
 ~~~
 
 If this was a mistake, we could correct it with `git rm`
@@ -76,7 +87,7 @@ If this was a mistake, we could correct it with `git rm`
 Now we're ready to `commit` this file. Committing changes means making a permanent record of the current state of your repository.
 
 ~~~{.input}
-git commit
+$ git commit
 ~~~
 
 You'll see something like this:
@@ -89,7 +100,7 @@ You'll see something like this:
 # Initial commit
 #
 # Changes to be committed:
-#       new file:   README
+#       new file:   fruit_list.txt
 #
 ~~~
 
@@ -99,18 +110,18 @@ Every commit needs a message to accompany it. It should be as brief as possible 
 
 It takes a while to get a hang of this, and it helps to read other people's commits to know what to say
 
-This time, we'll add "README added" and then type `^x` to write and quit
+This time, we'll add "fruit_list added" and then type `^x` to write and quit
 
 ~~~{.output}
 [master (root-commit) 07f5ba5] README added
  1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 README
+ create mode 100644 fruit_list.txt
 ~~~
 
 If you don't want to open nano every time you make a commit, you can use flag m
 
 ~~~{.input}
-git commit -m "README added"
+$ git commit -m "fruit_list added"
 ~~~
 
 In a repository, a file can exist in one of four states:
@@ -124,33 +135,48 @@ In a repository, a file can exist in one of four states:
 
 To see how this works, let's change that readme file to say something else, and then run `git status` again
 
+~~~
+$ nano fruit_list.txt
+~~~
+
+Let's change apple to kiwi:
+
+~~~
+banana
+kiwi
+peach
+~~~
+
+
 ~~~{.output}
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   README
+	modified:   fruit_list.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ~~~
 
-If you want to see what changed, you can use `git diff README`
+If you want to see what changed, you can use `git diff fruit_list.txt`
 
 ~~~{.output}
-diff --git a/README b/README
-index 299d09f..aeeb294 100644
---- a/README
-+++ b/README
-@@ -1 +1 @@
--Temporary git repository
-+Something else
+diff --git a/fruit_list.txt b/fruit_list.txt
+index b3231cb..2c3ec01 100644
+--- a/fruit_list.txt
++++ b/fruit_list.txt
+@@ -1,3 +1,3 @@
+ banana
+-apple
++kiwi
+ peach
 ~~~
 
 We can stage and commit this in one step with:
 
 ~~~{.input}
-git commit -am "README updated"
+$ git commit -am "fruit_list updated"
 ~~~
 
 ## Ignoring files
@@ -158,7 +184,7 @@ git commit -am "README updated"
 What if you have just put a bunch of files in your repo, that you want to add all at once?
 
 ~~~{.input}
-touch LICENSE CITATION script.R magic.py
+$ touch LICENSE CITATION grapher.R sorter.py passwords.log
 ~~~
 
 You could write them all out in your add command, or you can use `git add -A`
@@ -168,32 +194,49 @@ However, this will add *ALL THE THINGS* in your repo, which is probably somethin
 > You don't want to clutter your tracked files with a bunch of temp files or OS garbage
 > You *ESPECIALLY* don't want to accidentally share any keys or credentials files!
 
+Right now, if you type `git status`, you'll see passwords.log show up as 
+needing to be added. But you don't want that being shared on the repo, or on
+Github!
+
 Luckily, git has a workaround for this called `.gitignore`
 
 ~~~ {.input}
-echo "# Comment explaining what I'm ignoring
-*.log" > .gitignore
+$ touch .gitignore
+$ nano .gitignore
 ~~~
 
-Now if we make a log file and try to add and commit with `-A`
+Let's make sure Git doesn't track any log files:
 
-~~~{.input}
-touch test.log
-git add -A
-git status
+~~~
+# Files to ignore
+*.log
 ~~~
 
-git will ignore the log file
+Now if we type `git status`, our passwords.log file is no longer displayed. It
+won't be added if we add all, and subsequently will not be committed.
 
-~~~{.output}
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
+We can check this by typing:
 
-	new file:   .gitignore
-	new file:   CITATION
-	new file:   LICENSE
-	new file:   magic.py
-	new file:   script.R
+~~~
+$ git status --ignored
+~~~
+
+Which shows:
+
+~~~
+On branch master
+Ignored files:
+  (use "git add -f <file>..." to include in what will be committed)
+
+       	passwords.log
+
+nothing to commit, working directory clean
+~~~
+
+Thus we can safely proceed to add and commit all files:
+
+~~~
+$ git add -A && git commit -m "adding new files"
 ~~~
 
 ## Acknowledgments
