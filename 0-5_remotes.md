@@ -8,7 +8,15 @@ minutes:
 
 While git is useful to use locally, it is invaluable when there are lots of people contributing to the same project. Generally, when there are lots of people working on the same thing, it is good to have one authoritative source of the thing. In git, this is called the origin (but it could also be called dinosaur or banana, if you like). This origin is usually not in *YOUR* local filesystem (i.e. not in your home directory), but in a place where everyone can read from it, even if they can't write to it.
 
-When you `clone` a repo, git automatically adds the source you cloned from as the remote origin. You can check this for yourself with:
+When you `clone` a repo, git automatically adds the source you cloned from as the remote origin. Let's all clone this repo:
+
+~~~
+$ git clone https://github.com/dlab-berkeley/git-fundamentals
+~~~
+
+Now when you type `ls` you should see the folder in your `pwd`. If you `cd`
+into `git-fundamentals` and type `ls` you will see all the information you've
+learned today. You can learn more about where the repo decides by typing:
 
 ~~~{.input}
 git remote -v
@@ -17,8 +25,8 @@ git remote -v
 And you should see an output that looks something like this:
 
 ~~~{.output}
-origin	git@github.com:deniederhut/git-fundamentals.git (fetch)
-origin	git@github.com:deniederhut/git-fundamentals.git (push)
+origin  https://github.com/dlab-berkeley/git-fundamentals (fetch)
+origin  https://github.com/dlab-berkeley/git-fundamentals (push)
 ~~~
 
 You can get information about that remote with:
@@ -31,8 +39,8 @@ Which, for me, yields this:
 
 ~~~{.output}
 * remote origin
-  Fetch URL: git@github.com:deniederhut/git-fundamentals.git
-  Push  URL: git@github.com:deniederhut/git-fundamentals.git
+  Fetch URL: https://github.com/dlab-berkeley/git-fundamentals
+  Push  URL: https://github.com/dlab-berkeley/git-fundamentals
   HEAD branch: master
   Remote branches:
     gh-pages tracked
@@ -40,7 +48,7 @@ Which, for me, yields this:
   Local branch configured for 'git pull':
     master merges with remote master
   Local ref configured for 'git push':
-    master pushes to master (fast-forwardable)
+    master pushes to master (up to date)
 ~~~
 
 You can add your own remotes to a project with `git remote add <alias> <url>`. For example, if we wanted to add our home directory as a remote for this repo, we could type:
@@ -59,13 +67,13 @@ origin	git@github.com:deniederhut/git-fundamentals.git (fetch)
 origin	git@github.com:deniederhut/git-fundamentals.git (push)
 ~~~
 
-This is useful if you have already initialized a git repository in your local directory that you want to live at a URL or server where other people are able to access it. To send our data to that remote, we'll `push` it. Try typing:
+This is useful if you have already initialized a git repository in your local directory that you want to live at a URL or server where other people are able to access it. To send our data to that remote, we'll `push` it. Try changing a file, adding it, committing it, and then typing:
 
 ~~~{.input}
 git push
 ~~~
 
-What happens? If you're like me, you see:
+What happens? You should see:
 
 ~~~{.output}
 remote: Invalid username or password.
@@ -74,11 +82,11 @@ fatal: Authentication failed for 'https://github.com/deniederhut/git-fundmantals
 
 This is because if you don't specify the remote, git assumes that you mean `origin` (just like BASH assumes you mean `pwd`), and you don't have write access to my repository. 
 
-The general, best-practices workflow with a remotely hosted git repository looksl ike this:
+The general, best-practices workflow with a remotely hosted git repository looks like this:
 
 1. Fetch
-2. Merge (we'll talk about this in two bits)
-3. Branch (we'll talk about this in a bit)
+2. Merge
+3. Branch
 4. Modify
 5. Commit
 6. Merge 
@@ -90,7 +98,12 @@ The general, best-practices workflow with a remotely hosted git repository looks
 git pull origin
 ~~~
 
-After you have modified and commited your changes, you send the changes to the remote with:
+`pull` is essentially equivalent to first `fetch` and then `merge`. You would
+use `fetch` and `merge` if you wanted to look at the changes other have made
+before changing your own files immediately. Otherwise `pull` does this all in
+one command.
+
+After you have modified and committed your changes, you send the changes to the remote with:
 
 ~~~{.input}
 git push
