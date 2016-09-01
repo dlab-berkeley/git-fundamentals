@@ -16,7 +16,7 @@ $ git clone https://github.com/dlab-berkeley/git-fundamentals
 
 Now when you type `ls` you should see the folder in your `pwd`. If you `cd`
 into `git-fundamentals` and type `ls` you will see all the information you've
-learned today. You can learn more about where the repo decides by typing:
+learned today. You can learn more about where the repo resides by typing:
 
 ~~~{.input}
 git remote -v
