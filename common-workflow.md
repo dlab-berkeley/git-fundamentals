@@ -3,7 +3,7 @@ title: Git FUN!damentals
 subtitle: Common Workflow
 ---
 
-## Common workflow for GitHub
+## Common workflow for GitHub without branching
 
 If you do not have the repository locally yet:
 
@@ -28,10 +28,12 @@ Now that you are up to date with the master, go ahead and get some work done!
 When your session is done, or you want to update the remote master on GitHub, first `add` everything to track and pick up new files or a restructured tree:
 
 ~~~
-$ git add -A
+$ git add file1
 ~~~
 
-If you accidentally added a file you didn't want to, you can run `$ git reset` to undo an `add -A`. Once you have the right files added, which can be checked with a quick `$ git status`, you can `commit`, with a message describing what you've just updated.
+*NB*: `git add -A` will add everything to be staged, including new, modified, and deleted files. `git add .` will add new and modified files. While these commands can save you a lot of time, if you're working on a large project with others, it is much safer to add your new, modified, or deleted files one at a time.
+
+If you accidentally added a file you didn't want to, you can run `$ git reset` to undo an `add -A` or `add .`. Once you have the right files added, which can be checked with a quick `$ git status`, you can `commit`, with a message describing what you've just updated.
 
 ~~~
 $ git commit -m "just fixed that annoying bug"
