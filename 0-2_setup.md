@@ -64,8 +64,8 @@ command from the table below:
 Make sure everything was entered correctly by typing `git config --list`
 
 ~~~{.output}
-user.name=Dillon Niederhut
-user.email=dillon.niederhut@gmail.com
+user.name=Example Person
+user.email=example.person@gmail.com
 core.editor=nano
 ~~~
 
@@ -85,4 +85,3 @@ $ git --help
 This learning module borrows and adapts materials from the following organizations and individuals. Thank you!
 
 [Software Carpentry](https://github.com/swcarpentry/git-novice)
-[Dav Clark](https://github.com/davclark/git-fundamentals)

@@ -12,7 +12,7 @@ Let's start by making a new directory called 'fruits' and navigating to it
 
 ~~~{.input}
 $ mkdir fruits
-$ cd 
+$ cd
 ~~~
 
 Now, we're going to tell git to start tracking what we're up to
@@ -194,7 +194,7 @@ However, this will add *ALL THE THINGS* in your repo, which is probably somethin
 > You don't want to clutter your tracked files with a bunch of temp files or OS garbage
 > You *ESPECIALLY* don't want to accidentally share any keys or credentials files!
 
-Right now, if you type `git status`, you'll see passwords.log show up as 
+Right now, if you type `git status`, you'll see passwords.log show up as
 needing to be added. But you don't want that being shared on the repo, or on
 Github!
 
@@ -244,4 +244,3 @@ $ git add -A && git commit -m "adding new files"
 This learning module borrows and adapts materials from the following organizations and individuals. Thank you!
 
 [Software Carpentry](https://github.com/swcarpentry/git-novice)
-[Dav Clark](https://github.com/davclark/git-fundamentals)

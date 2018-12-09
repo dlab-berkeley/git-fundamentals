@@ -16,19 +16,19 @@ This should give you an output that looks something like this:
 
 ~~~{.output}
 commit 0a6b46759cfe19b0e9dc450c4c498e7bfe1dd2b7
-Author: Chris Hench <chris.l.hench@gmail.com>
+Author: Example Person <example.person@gmail.com>
 Date:   Sun Aug 21 09:42:31 2016 -0700
 
     adding new files
 
 commit 0514d532e21189099e93d203c3d34b974951ecab
-Author: Chris Hench <chris.l.hench@gmail.com>
+Author: Example Person <example.person@gmail.com>
 Date:   Sun Aug 21 09:41:31 2016 -0700
 
     fruit_list updated
 
 commit a5e55672ccd14860fb9a3602ca2a1cf515bcd878
-Author: Chris Hench <chris.l.hench@gmail.com>
+Author: Example Person <example.person@gmail.com>
 Date:   Sun Aug 21 09:41:01 2016 -0700
 
     fruit_list added
@@ -57,7 +57,7 @@ git log -p
 
 ~~~{.output}
 commit 0a6b46759cfe19b0e9dc450c4c498e7bfe1dd2b7
-Author: Chris Hench <chris.l.hench@gmail.com>
+Author: Example Person <example.person@gmail.com>
 Date:   Sun Aug 21 09:42:31 2016 -0700
 
     adding new files
@@ -84,7 +84,7 @@ new file mode 100644
 index 0000000..e69de29
 
 commit 0514d532e21189099e93d203c3d34b974951ecab
-Author: Chris Hench <chris.l.hench@gmail.com>
+Author: Example Person <example.person@gmail.com>
 Date:   Sun Aug 21 09:41:31 2016 -0700
 
     fruit_list updated
@@ -100,7 +100,7 @@ index b3231cb..2c3ec01 100644
  peach
 
 commit a5e55672ccd14860fb9a3602ca2a1cf515bcd878
-Author: Chris Hench <chris.l.hench@gmail.com>
+Author: Example Person <example.person@gmail.com>
 Date:   Sun Aug 21 09:41:01 2016 -0700
 
     fruit_list added
@@ -117,7 +117,7 @@ index 0000000..b3231cb
 (END)
 ~~~
 
-So we can see that the file was fine before commit `0514d5`, and that it was ruined by some schmuck named `Chris Hench`
+So we can see that the file was fine before commit `0514d5`, and that it was modified by someone named `Example Person`
 
 ## Recovering old files
 

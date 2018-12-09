@@ -59,21 +59,8 @@ GitHub makes it very easy to download, modify, and share code
 
 > Because of difficulties with CRAN, many R writers publish packages on GitHub instead
 
-## About me
-
-My name is Dillon Niederhut, and I am a PhD Candidate in Anthropology
-
-* I won't be able to answer all your questions.
-* No one will.
-* But especially me.
-* Because programming is one endless Google Search
-
-> At D-Lab, we call this last point "Rochelle's Law", after Rochelle Terman, who once pronounced that the only difference between a clueless user and a tech support guru is the amount of time spent googling
-
-
 ## Acknowledgments
 
 This learning module borrows and adapts materials from the following organizations and individuals. Thank you!
 
 [Software Carpentry](https://github.com/swcarpentry/git-novice)
-[Dav Clark](https://github.com/davclark/git-fundamentals)

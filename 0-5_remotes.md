@@ -61,10 +61,10 @@ git remote add test ../test
 And now when we run `git remote -v`, we see:
 
 ~~~{.output}
-test	/home/oski/test/.git (fetch)
-test	/home/oski/test/.git (push)
-origin	git@github.com:deniederhut/git-fundamentals.git (fetch)
-origin	git@github.com:deniederhut/git-fundamentals.git (push)
+test	/home/mylaptopusername/test/.git (fetch)
+test	/home/mylaptopusername/test/.git (push)
+origin	git@github.com:mygithubusername/git-fundamentals.git (fetch)
+origin	git@github.com:mygithubusername/git-fundamentals.git (push)
 ~~~
 
 This is useful if you have already initialized a git repository in your local directory that you want to live at a URL or server where other people are able to access it. To send our data to that remote, we'll `push` it. Try changing a file, adding it, committing it, and then typing:
@@ -77,10 +77,10 @@ What happens? You should see:
 
 ~~~{.output}
 remote: Invalid username or password.
-fatal: Authentication failed for 'https://github.com/deniederhut/git-fundmantals.git/'
+fatal: Authentication failed for 'https://github.com/mygithubusername/git-fundmantals.git/'
 ~~~
 
-This is because if you don't specify the remote, git assumes that you mean `origin` (just like BASH assumes you mean `pwd`), and you don't have write access to my repository. 
+This is because if you don't specify the remote, git assumes that you mean `origin` (just like BASH assumes you mean `pwd`), and you don't have write access to my repository.
 
 The general, best-practices workflow with a remotely hosted git repository looks like this:
 
@@ -89,7 +89,7 @@ The general, best-practices workflow with a remotely hosted git repository looks
 3. Branch
 4. Modify
 5. Commit
-6. Merge 
+6. Merge
 7. Push
 
 `Fetch` means to retrieve data from a remote. `Push` means to send data to a remote. Usually, when you retrieve data from a remote, you let git retrieve the data and merge it into your local data automatically - this is done with the `pull` command, like:
