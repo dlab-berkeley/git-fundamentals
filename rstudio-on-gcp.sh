@@ -4,3 +4,4 @@ read -s -p 'Make up a throwaway password: ' PASS; echo; docker rm -f rstudio 2>/
 echo "Now click on the 'Web Preview' button above in Google Cloud Shell menubar and select 'Preview on Port 8080'."
 echo "A new browser tab will open and you can log in with the password you typed"
 echo "username: rstudio"
+echo "https://ssh.cloud.google.com/devshell/proxy?authuser=0&port=8080"
