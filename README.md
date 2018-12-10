@@ -28,6 +28,12 @@ A starting point for discovering the wonderful world of Git and GitHub in the co
     - Vim [fugitive](https://github.com/tpope/vim-fugitive)
     - Emacs [Magit](https://github.com/magit/magit/wiki)
     - [Sublime Text 2](https://github.com/kemayo/sublime-text-git)
+    
+  - To choose a default editor to use with git:
+```
+Atom	$ git config --global core.editor "atom --wait"
+nano	$ git config --global core.editor "nano -w"
+```
 
 ## Cloud Shell Example
 
