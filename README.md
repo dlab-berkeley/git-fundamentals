@@ -44,6 +44,9 @@ git clone https://github.com/dlab-berkeley/git-fundamentals/
 cd git-fundamentals
 ./rstudio-on-gcp.sh
 ```
+# Our materials for Today
+
+Software Carpentry tutorial: https://swcarpentry.github.io/git-novice/
 
 # Awesome resources
 
