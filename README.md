@@ -1,3 +1,4 @@
+I am inserting text
 D-Lab Git Fundamentals Workshop
 ===============================
 
