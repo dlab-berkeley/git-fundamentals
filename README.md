@@ -1,33 +1,50 @@
-git-fundamentals
-================
+D-Lab Git Fundamentals Workshop
+===============================
 
-A starting point for discovering the wonderful world of Git, GitHub, and Git
-Annex (Assistant)
+A starting point for discovering the wonderful world of Git and GitHub in the context of Research Workflows.
 
-## Getting the tools / Setup
+# Getting ready for today's workshop
 
  - Sign up for [github](https://github.com), and **verify your email**.
+ - Live chat for our workshop:
+ [![Join the chat at https://gitter.im/dlab-berkeley/git-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dlab-berkeley/git-fundamentals?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
+## Laptop Installation
+
+**Note:** We'll install git together as a group during today's workshop, however you're welcome to go ahead on your own if you like.
+
  - Command line tools (you'll need this!):
     - GitHub recommends the [official Git installer](http://git-scm.com/downloads)
     - **I** recommend [homebrew](http://brew.sh) for hackers on OS X
     - And it's easier to use your package manager (apt, yum, ...) for Unix, etc.
  - GUI tools
-    - Windows & Mac, also supports hg: [SourceTree](http://www.sourcetreeapp.com/)
-    - Lightweight Mac client: [GitX-dev](http://rowanj.github.io/gitx/)
-    - Lightweight GTK client: [gitg](https://wiki.gnome.org/Apps/Gitg) (get it
-      with your package manager).
-    - Integrated with file manager:
-        - [TortoiseGit](https://code.google.com/p/tortoisegit/) on Windows
-        - [RabbitVCS](http://rabbitvcs.org/) on Linux (also integrates with gedit)
+    - [GitHub Desktop App](https://desktop.github.com/)
+    - [SourceTree](http://www.sourcetreeapp.com/)
     - Many [others](http://git-scm.com/downloads/guis) are available, and you
       can search for even more!
  - Integration for your text editor!
+	- [Atom](https://atom.io/)
     - Vim [fugitive](https://github.com/tpope/vim-fugitive)
-    - [Emacs](http://www.emacswiki.org/emacs/Git)
+    - Emacs [Magit](https://github.com/magit/magit/wiki)
     - [Sublime Text 2](https://github.com/kemayo/sublime-text-git)
-    - gedit (use RabbitVCS)
 
-## Awesome resources
+## Cloud Shell Example
+
+Any time you need quick access to a shell command line somewhere other than your laptop you can use (for free!) Google Cloud Shell: https://cloud.google.com/shell/
+
+Try launching Cloud Shell now in your browser by clicking this link:
+
+https://console.cloud.google.com/home/dashboard?cloudshell=true
+
+Then run these commands in the Cloud Shell window:
+
+```shell
+git clone https://github.com/dlab-berkeley/git-fundamentals/
+cd git-fundamentals
+./rstudio-on-gcp.sh
+```
+
+# Awesome resources
 
  - [Basic commands cheat sheet(s)](http://git-scm.com/docs) (Note the links to
    other cheat sheets!)
@@ -39,41 +56,16 @@ Annex (Assistant)
  - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
  - [The visual git guide](http://marklodato.github.io/visual-git-guide/index-en.html)
 
-### Local Git expositors at UC Berkeley
+## What to do when you run into TROUBLE?!?!
+
+  - Read the [Flight rules for Git](https://github.com/k88hudson/git-flight-rules#readme), a guide for using Git and what to do when things go wrong.
+
+Flight Rules are the hard-earned body of knowledge recorded in manuals that list, step-by-step, what to do if X occurs, and why. Essentially, they are extremely detailed, scenario-specific standard operating procedures.
+
+## Local Git expositors at UC Berkeley
 
  - A problem-focused exploration of git features is available in @jkitzes' [Data
    Science Lessons](http://jkitzes.github.io/datasci-lessons/)
  - [An IPython
    notebook](https://github.com/fperez/reprosw/blob/master/Version%20Control.ipynb)
    (of course!) from @fperez.
- - [Lots of exposition](http://matthew-brett.github.io/pydagogue) on git + other
-   mostly python stuff and [python scripts for a standardized git
-   workflow](https://github.com/matthew-brett/gitwash) from @matthew-brett.
- - [Tons of R code to access public
-   APIs](http://ropensci.org/packages/index.html) from @karthik and the
-   @rOpenSci team.
-
-## Fancy GitHub features
-
-Map diffs are amazing (you may have to click the "rich diff" button as opposed to the raw "<>" button):
-
- - [Explore the history of markers for restaurants](https://github.com/DU-GIS/Geojson_Data/blob/master/Restaurants.geojson)
- - [See how congressional redistricting looks](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5?short_path=85d2c1b#diff-85d2c1b78193e963475250414e57940b)
-
-CSV diffs are strangely not as good, but (properly formatted) CSV is displayed
-nicely and is searchable:
-
- - [A tables of S&P 500 securities](https://github.com/datasets/s-and-p-500-companies/blob/master/data/constituents-financials.csv)
-
-
-## Git Annex
-
-Read more here: http://git-annex.branchable.com/
-
-## Forking! What's that?
-
-Forking on github is same as cloning in the command line.
-
-## Branching is also very important for collaboration
-
-For branching, you should check the above link for now.
