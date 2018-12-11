@@ -1,6 +1,7 @@
 I am inserting text
 
 D-Lab Git Fundamentals Workshop
+181210
 ===============================
 
 A starting point for discovering the wonderful world of Git and GitHub in the context of Research Workflows.
