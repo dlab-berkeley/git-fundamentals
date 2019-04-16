@@ -10,6 +10,13 @@ A starting point for discovering the wonderful world of Git and GitHub in the co
  [![Join the chat at https://gitter.im/dlab-berkeley/git-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dlab-berkeley/git-fundamentals)
  - Zoom: https://berkeley.zoom.us/j/954153041
 
+# Our materials for Today
+
+We'll be walking through a standard tutorial together. We won't cover all the material, but enough to get you started with the fundamentals and use this as a way to work through your workflow and answer questions that you have:
+
+Software Carpentry tutorial: https://swcarpentry.github.io/git-novice/
+
+
 ## Laptop Installation
 
 **Note:** We'll install git together as a group during today's workshop, however you're welcome to go ahead on your own if you like.
@@ -50,9 +57,6 @@ git clone https://github.com/dlab-berkeley/git-fundamentals/
 cd git-fundamentals
 ./rstudio-on-gcp.sh
 ```
-# Our materials for Today
-
-Software Carpentry tutorial: https://swcarpentry.github.io/git-novice/
 
 # Awesome resources
 
