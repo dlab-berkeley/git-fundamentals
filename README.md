@@ -5,10 +5,10 @@ A starting point for discovering the wonderful world of Git and GitHub in the co
 
 # Getting ready for today's workshop
 
- - Zoom: https://berkeley.zoom.us/j/162527059
  - Sign up for [github](https://github.com), and **verify your email**.
  - Live chat for our workshop:
- [![Join the chat at https://gitter.im/dlab-berkeley/git-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dlab-berkeley/git-fundamentals?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+ [![Join the chat at https://gitter.im/dlab-berkeley/git-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dlab-berkeley/git-fundamentals)
+ - Zoom: https://berkeley.zoom.us/j/954153041
 
 ## Laptop Installation
 
