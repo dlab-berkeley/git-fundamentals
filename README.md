@@ -5,10 +5,8 @@ A starting point for discovering the wonderful world of Git and GitHub in the co
 
 # Getting ready for today's workshop
 
- - Sign up for [github](https://github.com), and **verify your email**.
- - Live chat for our workshop:
- [![Join the chat at https://gitter.im/dlab-berkeley/git-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dlab-berkeley/git-fundamentals)
- - Zoom: https://berkeley.zoom.us/j/954153041
+ - Sign up for [github](https://github.com), and **and check for the verification email**.
+ - Install git on your laptop: https://git-scm.com/downloads
 
 # Our materials for Today
 
@@ -17,14 +15,34 @@ We'll be walking through a standard tutorial together. We won't cover all the ma
 Software Carpentry tutorial: https://swcarpentry.github.io/git-novice/
 
 
-## Laptop Installation
 
-**Note:** We'll install git together as a group during today's workshop, however you're welcome to go ahead on your own if you like.
+# Git in the Cloud
 
- - Command line tools (you'll need this!):
-    - GitHub recommends the [official Git installer](http://git-scm.com/downloads)
-    - **I** recommend [homebrew](http://brew.sh) for hackers on OS X
-    - And it's easier to use your package manager (apt, yum, ...) for Unix, etc.
+To simulate a collaborative research workflow, we will also be using a remote cloud environment in addition to your laptop.
+
+## Cloud Shell Example
+
+Any time you need quick access to a shell command line somewhere other than your laptop you can use (for free!) Google Cloud Shell.
+
+Try launching Cloud Shell now in your browser by clicking this link:
+
+https://console.cloud.google.com/home/dashboard?cloudshell=true
+
+Then run these commands in the Cloud Shell window:
+
+```shell
+git clone https://github.com/dlab-berkeley/git-fundamentals/
+cd git-fundamentals
+./rstudio-on-gcp.sh
+```
+
+## Other GUI tools for your laptop
+
+**Note:** The tools below are other interesting and useful tools that you may wish to explore, however they are *NOT REQUIRED* for this workshop. The only install that is required is the the [official Git installer](http://git-scm.com/downloads).
+
+ - Command line tools:
+    - For OS X, install the [homebrew](http://brew.sh) package manager
+    - For Windows install the [chocolatey](https://chocolatey.org/) package manager
  - GUI tools
     - [GitHub Desktop App](https://desktop.github.com/)
     - [SourceTree](http://www.sourcetreeapp.com/)
@@ -40,22 +58,6 @@ Software Carpentry tutorial: https://swcarpentry.github.io/git-novice/
 ```
 Atom	$ git config --global core.editor "atom --wait"
 nano	$ git config --global core.editor "nano -w"
-```
-
-## Cloud Shell Example
-
-Any time you need quick access to a shell command line somewhere other than your laptop you can use (for free!) Google Cloud Shell: https://cloud.google.com/shell/
-
-Try launching Cloud Shell now in your browser by clicking this link:
-
-https://console.cloud.google.com/home/dashboard?cloudshell=true
-
-Then run these commands in the Cloud Shell window:
-
-```shell
-git clone https://github.com/dlab-berkeley/git-fundamentals/
-cd git-fundamentals
-./rstudio-on-gcp.sh
 ```
 
 # Awesome resources
