@@ -7,6 +7,7 @@ A starting point for discovering the wonderful world of Git and GitHub in the co
 
  - Sign up for [github](https://github.com), and **and check for the verification email**.
  - Install git on your laptop: https://git-scm.com/downloads
+ - Connect to Zoom: https://berkeley.zoom.us/j/536430271
 
 # Our materials for Today
 
