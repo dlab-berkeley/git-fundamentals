@@ -7,14 +7,12 @@ A starting point for discovering the wonderful world of Git and GitHub in the co
 
  - Sign up for [github](https://github.com), and **and check for the verification email**.
  - Install git on your laptop: https://git-scm.com/downloads
- - Connect to Zoom: https://berkeley.zoom.us/j/536430271
 
 # Our materials for Today
 
 We'll be walking through a standard tutorial together. We won't cover all the material, but enough to get you started with the fundamentals and use this as a way to work through your workflow and answer questions that you have:
 
 Software Carpentry tutorial: https://swcarpentry.github.io/git-novice/
-
 
 
 # Git in the Cloud
